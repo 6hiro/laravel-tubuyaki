@@ -33,7 +33,7 @@ const Core: React.FC = () => {
           <section>
             <Routes>
               {/* Auth */}
-              <Route path="/register" element={<Register />} />
+              <Route path="/auth/register" element={<Register />} />
               <Route path="/auth/login" element={<Login />} />
               <Route path="/settings" element={<Settings />} />
               {/* Profile */}

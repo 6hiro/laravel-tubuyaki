@@ -27992,7 +27992,7 @@ var Core = function Core() {
   return react_1["default"].createElement("div", null, react_1["default"].createElement(react_router_dom_1.BrowserRouter, null, react_1["default"].createElement(Layout_1["default"], null), react_1["default"].createElement(Profiles_1["default"], null), react_1["default"].createElement("main", {
     className: "main"
   }, react_1["default"].createElement("section", null, react_1["default"].createElement(react_router_dom_1.Routes, null, react_1["default"].createElement(react_router_dom_1.Route, {
-    path: "/register",
+    path: "/auth/register",
     element: react_1["default"].createElement(Register_1["default"], null)
   }), react_1["default"].createElement(react_router_dom_1.Route, {
     path: "/auth/login",
