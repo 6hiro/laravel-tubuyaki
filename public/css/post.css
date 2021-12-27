@@ -1,0 +1,59 @@
+.post {
+  background: #f4f8fb;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: flex;
+  width: 340px;
+}
+.post .post_icon {
+  width: 40px;
+  margin: 5px;
+}
+.post .post_main {
+  width: 290px;
+  padding: 0 5px;
+}
+.post .post_main .post_main_header {
+  display: flex;
+  justify-content: space-between;
+}
+.post .post_main .post_main_header .post_user_name {
+  padding: 8px 0;
+}
+.post .post_main .post_main_header .posted_at {
+  font-size: 12px;
+  color: #585e4e;
+  padding: 16px 0;
+  padding-right: 10px;
+}
+.post .post_text {
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  padding: 10px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+.post .post_text .post_hashtag {
+  cursor: pointer;
+  color: blue;
+}
+.post .posted_at {
+  color: #585e4e;
+  padding-right: 10px;
+  text-align: right;
+}
+.post .post_additional_elements {
+  position: relative;
+  padding: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.post .post_additional_elements .post_likes {
+  position: relative;
+  top: 3px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

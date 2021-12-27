@@ -1,0 +1,15 @@
+{
+    "/js/index.js": "/js/index.js",
+    "/css/layout.css": "/css/layout.css",
+    "/css/getMorePost.css": "/css/getMorePost.css",
+    "/css/editProfile.css": "/css/editProfile.css",
+    "/css/auth.css": "/css/auth.css",
+    "/css/addPost.css": "/css/addPost.css",
+    "/css/updatePost.css": "/css/updatePost.css",
+    "/css/settings.css": "/css/settings.css",
+    "/css/profiles.css": "/css/profiles.css",
+    "/css/profile.css": "/css/profile.css",
+    "/css/postList.css": "/css/postList.css",
+    "/css/postDetail.css": "/css/postDetail.css",
+    "/css/post.css": "/css/post.css"
+}

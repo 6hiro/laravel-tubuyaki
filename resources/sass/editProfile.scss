@@ -1,0 +1,20 @@
+.edit_prof {
+    .edit_prof_title {
+        margin-bottom: 30px;
+        font-weight: bolder;
+        text-align: center;
+        color: #0e0e0e;
+        font-weight: bold;
+    }
+    .edit_progress {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+    }
+    .edit_prof_form {
+        .edit_prof_button {
+            text-align: right;
+            margin-top: 10px;
+        }
+    }
+}

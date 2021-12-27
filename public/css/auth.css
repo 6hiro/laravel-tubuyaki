@@ -1,0 +1,44 @@
+.auth_form {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.auth_title {
+  font-family: sans-serif;
+  font-weight: bold;
+  /* color: #3b72ff; */
+  color: #666;
+  text-align: center;
+}
+
+.auth_error {
+  color: #ff00ff;
+  /* font-weight: 600; */
+  text-align: center;
+  margin-top: 10px;
+}
+
+.auth_regiter {
+  right: 1px;
+}
+
+.auth_text {
+  text-align: center;
+}
+
+.auth_button {
+  text-align: right;
+  margin-top: 10px;
+}
+
+.auth_span {
+  color: #00f;
+  /* font-weight: 600; */
+  cursor: pointer;
+}
+
+.auth_progress {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
