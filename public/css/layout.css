@@ -104,6 +104,10 @@ img {
   border-radius: 0.35rem;
 }
 
+.header__search .header__icon {
+  padding: 2px 0 0 0;
+}
+
 /* .header__input:hover {
   background-color: rgba(0, 0, 0, 0.1);
 } */
@@ -260,7 +264,6 @@ img {
 
 .nav__logout {
   /* margin-top: 5rem; */
-  margin-top: 1rem;
 }
 
 /* Dropdown */

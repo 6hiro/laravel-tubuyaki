@@ -26901,7 +26901,7 @@ var Layout = function Layout() {
     className: 'bx bx-message-square'
   }), react_1["default"].createElement("span", {
     className: "nav__logo_name"
-  }, "Tubuyaki")), react_1["default"].createElement("div", {
+  }, "TubuYaki")), react_1["default"].createElement("div", {
     className: "nav__list"
   }, react_1["default"].createElement("div", {
     className: "nav__items"
@@ -26949,17 +26949,17 @@ var Layout = function Layout() {
   }, "\u304A\u6C17\u306B\u5165\u308A"), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/post/add/",
     className: "nav__dropdown_item"
-  }, "\u8FFD\u52A0"))))))), react_1["default"].createElement("div", null, user.id === 0 ? // ログイン前
+  }, "\u8FFD\u52A0")))), user.id === 0 ? // ログイン前
   react_1["default"].createElement(react_1["default"].Fragment, null, react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/auth/register/",
-    className: "nav__link nav__logout"
+    className: "nav__link"
   }, react_1["default"].createElement("i", {
     className: "bx bx-user-plus nav__icon"
   }), react_1["default"].createElement("span", {
     className: "nav__name"
   }, "\u30E6\u30FC\u30B6\u30FC\u767B\u9332")), react_1["default"].createElement(react_router_dom_1.Link, {
     to: "/auth/login/",
-    className: "nav__link nav__logout"
+    className: "nav__link"
   }, react_1["default"].createElement("i", {
     className: "bx bx-log-in-circle nav__icon"
   }), react_1["default"].createElement("span", {
@@ -26972,7 +26972,7 @@ var Layout = function Layout() {
     className: "bx bx-log-out-circle nav__icon"
   }), react_1["default"].createElement("span", {
     className: "nav__name"
-  }, "\u30ED\u30B0\u30A2\u30A6\u30C8"))))));
+  }, "\u30ED\u30B0\u30A2\u30A6\u30C8"))))))));
 };
 
 exports["default"] = Layout;
@@ -31210,7 +31210,7 @@ exports.fetchAsyncPostComment = (0, toolkit_1.createAsyncThunk)("comment/post", 
         case 0:
           return [4
           /*yield*/
-          , axios_1["default"].post("/api/post/comment/", comment)];
+          , axios_1["default"].post("/api/post/comment", comment)];
 
         case 1:
           res = _a.sent();
@@ -31229,7 +31229,7 @@ exports.fetchAsyncDeleteComment = (0, toolkit_1.createAsyncThunk)("commentDelete
         case 0:
           return [4
           /*yield*/
-          , axios_1["default"]["delete"]("/api/post/comment/".concat(id, "/"))];
+          , axios_1["default"]["delete"]("/api/post/comment/".concat(id))];
 
         case 1:
           res = _a.sent();

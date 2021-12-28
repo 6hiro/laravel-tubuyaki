@@ -36,7 +36,7 @@ Route::group(['middleware' => 'auth:sanctum'], function(){
     Route::get('/user/{id}/followings', 'UserController@followings')->name('followings');
     Route::get('/user/{id}/followers', 'UserController@followers')->name('followers');
     Route::get('/user/{id}/likes', 'UserController@likesUsers')->name('likesUsers');
-    Route::get('/post/user/{id}/', 'UserController@userPosts')->name('userPosts');
+    Route::get('/post/user/{id}', 'UserController@userPosts')->name('userPosts');
 
     // Post
     Route::get('/post', 'PostController@index')->name('postIndex'); 
@@ -50,7 +50,7 @@ Route::group(['middleware' => 'auth:sanctum'], function(){
     Route::put('/post/{post}/like', 'PostController@likeUnlike')->name('likeUnlike');
     Route::get('/post/search/{word}', 'PostController@searchPosts')->name('');
     // Post/Comment
-    Route::post('/post/comment/', 'PostController@addComment')->name('addComment');
+    Route::post('/post/comment', 'PostController@addComment')->name('addComment');
     Route::delete('/post/comment/{comment}', 'PostController@destroyComment')->name('destroyComment');
 
 });

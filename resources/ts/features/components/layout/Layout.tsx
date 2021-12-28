@@ -118,7 +118,7 @@ const Layout: React.FC = () => {
                     <div>
                         <Link to="/" className="nav__link nav__logo">
                             <i className='bx bx-message-square'></i>
-                            <span className="nav__logo_name">Tubuyaki</span>
+                            <span className="nav__logo_name">TubuYaki</span>
                         </Link>
         
                         <div className="nav__list">
@@ -168,34 +168,35 @@ const Layout: React.FC = () => {
                                         </div>
                                     </div>
                                 </div> */}
+                                
+                                {user.id === 0 ?
+                                    // ログイン前
+                                    <>
+                                    <Link to="/auth/register/" className="nav__link">
+                                        <i className="bx bx-user-plus nav__icon" ></i>
+                                        <span className="nav__name">ユーザー登録</span>
+                                    </Link>
+                                    <Link to="/auth/login/" className="nav__link">
+                                    <i className="bx bx-log-in-circle nav__icon"></i>
+                                        <span className="nav__name">ログイン</span>
+                                    </Link>
+                                    </>
+                                :
+                                    // ログイン後
+                                    <span 
+                                        className="nav__link nav__logout"
+                                        onClick={Logout}
+                                    >
+                                        <i className="bx bx-log-out-circle nav__icon" ></i>
+                                        <span className="nav__name">ログアウト</span>
+                                    </span>
+                                }
+                                
                             </div>
                         </div>
                     </div>
 
-                    <div>
-                        {user.id === 0 ?
-                            // ログイン前
-                            <>
-                            <Link to="/auth/register/" className="nav__link nav__logout">
-                                <i className="bx bx-user-plus nav__icon" ></i>
-                                <span className="nav__name">ユーザー登録</span>
-                            </Link>
-                            <Link to="/auth/login/" className="nav__link nav__logout">
-                            <i className="bx bx-log-in-circle nav__icon"></i>
-                                <span className="nav__name">ログイン</span>
-                            </Link>
-                            </>
-                        :
-                            // ログイン後
-                            <span 
-                                className="nav__link nav__logout"
-                                onClick={Logout}
-                            >
-                                <i className="bx bx-log-out-circle nav__icon" ></i>
-                                <span className="nav__name">ログアウト</span>
-                            </span>
-                        }
-                    </div>
+
                 </nav>
             </div>
         </>

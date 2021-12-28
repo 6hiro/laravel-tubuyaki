@@ -82,14 +82,14 @@ export const fetchAsyncLikeUnlikePost = createAsyncThunk(
 export const fetchAsyncPostComment = createAsyncThunk(
   "comment/post",
   async (comment: PROPS_COMMENT) => {
-    const res = await axios.post(`/api/post/comment/`, comment);
+    const res = await axios.post(`/api/post/comment`, comment);
     return res.data;
   }
 );
 export const fetchAsyncDeleteComment = createAsyncThunk(
   "commentDelete/delete", 
   async (id: number) => {
-    const  res  = await axios.delete(`/api/post/comment/${id}/`);
+    const  res  = await axios.delete(`/api/post/comment/${id}`);
     return res.data;
   }
 );
